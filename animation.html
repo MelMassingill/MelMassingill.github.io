@@ -3,13 +3,28 @@
 
 <head>
 
+
+
+<link href="lity.css" rel="stylesheet">
+<script src="jquery.js"></script>
+<script src="lity.js"></script>
+
+
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One" rel="stylesheet">
 
-<link href="dist/lity.css" rel="stylesheet">
-<script src="vendor/jquery.js"></script>
-<script src="dist/lity.js"></script>
 
-<STYLE TYPE="text/css"> 
+
+
+<style type="text/css" media="screen">
+ul.img-list { list-style-type: none;margin:0px;padding:10px;text-align:center; }
+ul.img-list li {width:170px;height:140px;margin: 0 1em 1em 0;;border:5px solid #d5596f;position:relative;vertical-align:top;display:inline-block;background:#d5596f;}
+ul.img-list li:hover span.text-content {opacity:1;}
+span.text-content {position:absolute;top:0;left:0;background:rgba(213,89,111,0.9);color:fde6de;cursor:pointer;display:table;width:170px;height:110px;opacity:0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;}
+span.text-content span {display:table-cell;vertical-align:middle;text-align:center;}
 
 
 
@@ -32,6 +47,9 @@ scrollbar-arrow-color: d5596f;
 scrollbar-Shadow-Color: 586a38;
 
 }
+
+
+
 </STYLE>
 
 
@@ -63,9 +81,9 @@ scrollbar-Shadow-Color: 586a38;
    graphic4on.src = "about2.gif";
 
    graphic5= new Image();
-   graphic5.src= "links1.gif";
+   graphic5.src= "contact1.gif";
    graphic5on = new Image();
-   graphic5on.src = "links2.gif";
+   graphic5on.src = "contact2.gif";
 
    
 
@@ -80,6 +98,9 @@ scrollbar-Shadow-Color: 586a38;
 
 
 </script>
+
+
+
 
 
 
@@ -102,7 +123,7 @@ scrollbar-Shadow-Color: 586a38;
 	<tr height="37"><td height="37" width="263" valign="top"><a href="gallery.html"  onMouseOver="imageChange('two','graphic2on')" onMouseOut="imageChange('two','graphic2')"><img src="gallery1.gif" height="37" width="263" name="two" border=0></a></td></tr>
 	<tr height="32"><td height="32" width="263" valign="top"><a href="resume.html" onMouseOver="imageChange('three','graphic3on')" onMouseOut="imageChange('three','graphic3')"><img src="resume1.gif" border=0  height="32" width="263" name="three"></a></td></tr>
 	<tr height="36"><td height="36" width="263" valign="top"><a href="about.html" onMouseOver="imageChange('four','graphic4on')" onMouseOut="imageChange('four','graphic4')"> <img src="about1.gif" height="36" width="263" name="four" border=0></a></td></tr>
-	<tr height="38"><td height="38" width="263" valign="top"><a href="links.html" onMouseOver="imageChange('five','graphic5on')" onMouseOut="imageChange('five','graphic5')"><img src="links1.gif" height="38" width="263" name="five" border=0></a></td></tr>
+	<tr height="38"><td height="38" width="263" valign="top"><a href="contact.html" onMouseOver="imageChange('five','graphic5on')" onMouseOut="imageChange('five','graphic5')"><img src="contact1.gif" height="38" width="263" name="five" border=0></a></td></tr>
 	<tr height="73"><td height="73" width="263" valign="top"><img src="tabletest_08.gif" height="73" width="263"></td></tr>
 	<tr><td valign="middle" background="tablebg1.gif"></td></tr>
 	</table>
@@ -114,29 +135,49 @@ scrollbar-Shadow-Color: 586a38;
 
 <center><img src="animhead.jpg"><p>
 
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr bgcolor=d5596f><td width=160 valign=center align=center ><a href="https://vimeo.com/103936379" data-lity><img src="demo.jpg"></td><td align=left><font color=fde6de size=+1> <a href="reel.html">Character Animation Demo Reel<br><a href="breakdown.pdf"><font size=-1>Breakdown and Credits (.PDF)</a></td></tr></table><p>
-
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr><td width=160 valign=center align=center><img src="wdgs.png"></td><td align=left><font color=fde6de size=+1><a href=https://vimeo.com/146595927>"What Does God Say About Sex?"</a><br><font size=-1>Contracted by Storytelling Pictures. <br>Contact Melissa Massingill for the password</td></tr></table><p>
-
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr><td width=160 valign=center align=center><img src="thebox.png"></td><td align=left><font color=fde6de size=+1><a href=https://vimeo.com/146596865>"The Box"</a><br><font size=-1>Contracted by Storytelling Pictures. <br>Contact Melissa Massingill for the password</td></tr></table><p>
-
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr><td width=160 valign=center align=center><img src="playsafe.png"></td><td align=left><font color=fde6de size=+1><a href=https://vimeo.com/146597701>"Press and Play"</a><br><font size=-1>Contracted by Play Safe, LLC. <br></td></tr></table><p>
 
 
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr><td width=160 valign=center align=center><img src="ninja.jpg"></td><td align=left><font color=fde6de size=+1>"Ninja Tea"<br><a href="ninja.html"><font size=-1>More info and Movie Download</a></td></tr></table><p>
+<ul class="img-list">
+  <li>
+    <a href="https://vimeo.com/103936379" data-lity"><img src="demo.jpg" width="160"><span class="text-content"><span>Animation Demo Reel</span>
+    </a><br><font color="fde6de">Demo Reel<br><a href="breakdown.pdf"><font size=-1>Breakdown and Credits (.PDF)</a></font>
+  </li>
+  <li>
+    <a href="https://vimeo.com/162381867" data-lity"><img src="adolescentbrain.jpg" width="160"><span class="text-content"><span>Whiteboard style animation with cut-out animation contracted by Storytelling Pictures, LLC</span>
+    </a><p><font color="fde6de">"In the Adolescent Brain"
+  </li>
+  <li>
+    <a href="https://vimeo.com/146597701" data-lity"><img src="playsafe.png" width="160"><span class="text-content"><span>Created in Flash and Photoshop. Contracted by Play Safe, LLC</span>
+    </a><br><p><font color="fde6de">"Press and Play"
+  </li>
+  <li>
+    <a href="hhttps://youtu.be/ycX2mQz7oSk" data-lity"><img src="ninja.jpg" width="160"><span class="text-content"><span>Produced in 10 weeks in Flash on Cintiqs at SCAD by Melissa Massingill, Jen Ray, Andres Mendez, and Patrick Baker </span>
+    </a><br><font color="fde6de">"Ninja Tea"<br><a href="ninja.html"><font size=-1>More info</a></font>
+  </li>
+  <li>
+    <a href="https://youtu.be/b-OyIuTPhVU" data-lity"><img src="hogan.jpg" width="160"><span class="text-content"><span>PSA animated at the Kalamazoo Animation Festival International's Cartoon Challenge</span>
+    </a><br><font color="fde6de">"No Trombones!"<br><a href="kafi.html"><font size=-1>More info</a></font>
+  </li>
+  <li>
+    <a href="https://youtu.be/0nvKd3vNOns" data-lity"><img src="farm.jpg" width="160"><span class="text-content"><span>This musical Flash animation was part of an installation.</span>
+    </a><br<font color="fde6de">"Down on the Farm"<br><a href="farm.html"><font size=-1>More info</a></font>
+  </li>
+ 
+</ul>
 
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr><td width=160 valign=center align=center><img src="hogan.jpg"></td><td align=left><font color=fde6de size=+1>KAFI Cartoon Challenge<br><a href="kafi.html"><font size=-1>More info and Movie Download</a></td></tr></table><p>
 
-<table cellpadding="5" bgcolor=d5596f width=500>
-<tr><td width=160 valign=center align=center ><img src="farm.jpg"></td><td align=left><font color=fde6de size=+1>"Down on the Farm"<br><a href="farm.html"><font size=-1>More info and Movie Download</a></table><p>
+
 
 </td>
 	
 	<td width="66" background="tabletest_11.gif"></td></tr>
 <tr><td colspan="3" width="760"><img src="tabletest_13.gif"></td></tr></table>
+
+
+
+
+
+
+
+</body>
+</html>
